@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 
 const touristRoutes = require('./api/routes/tourist');
 const helpCenterRoutes = require('./api/routes/helpcenter');
+const auth = require('./api/routes/userauth');
 
 //DB connections
 mongoose.connect('mongodb+srv://dbUser:dbUser123@afcluster.xlexh.mongodb.net/touristDB?retryWrites=true&w=majority',
@@ -28,6 +29,7 @@ app.use((req, res, next) => {
 
 app.use('/tourist', touristRoutes);
 app.use('/helpCenter', helpCenterRoutes);
+app.use('/auth', auth);
 
 app.use((req, res, next) => {
     const error = new Error("not found!");
