@@ -48,7 +48,7 @@ const Signup = ({ signup, isAuthenticated }) => {
 
   return (
     <div>
-      <h1 style={{textAlign: 'center'}}>Sign Up to your create an account</h1>
+      <h1 style={{textAlign: 'center'}}> Create an account</h1>
       <form onSubmit={(e) => onSubmit(e)} className={classes.form}>
         <TextField
           type="text"

@@ -13,6 +13,7 @@ import { check_authenticated } from '../actions/action.auth';
 const useStyles = makeStyles((theme) => ({
   root: {
     height: '100vh',
+    backgroundColor: '#ffffff'
   },
   image: {
     backgroundImage: 'url(https://source.unsplash.com/random?Sri_lanka)',
@@ -23,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
         : theme.palette.grey[900],
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    borderRadius: '18px'
   },
   paper: {
     margin: theme.spacing(6, 8),
@@ -45,7 +47,7 @@ const Layout = (props) => {
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <Grid item xs={false} sm={4} md={7} className={classes.image}>
+      <Grid item xs={false} sm={4} md={4} className={classes.image}>
        <div style={{
                  display:'flex',
                  flexDirection:'column',
@@ -67,12 +69,12 @@ const Layout = (props) => {
             textShadow: '1px 1px 1px #111111',textAlign:'center' }}>Tourism Disaster Monitoring and Hosting Program</p>
         </div>
       </Grid>
-      <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+      <Grid item xs={12} sm={8} md={8} component={Paper} elevation={6} square>
         <div className={classes.paper}>
-
+        <Navbar />
        
           <div className="containerMain">
-              <Navbar />
+              
               </div>
               {props.children}
     
