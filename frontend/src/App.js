@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import MainPage from "./pages/mainpage";
+import MainPage from "./pages/Mainpage";
 import Login from "./pages/Login";
 import Routes from "./utils/routing/Routes";
 

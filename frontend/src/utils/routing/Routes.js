@@ -6,7 +6,7 @@ import Login from "../../pages/Login";
 import Signup from "../../pages/Signup";
 import Users from "../../pages/Users";
 import Activated from "../../pages/Activated";
-import MainPage from "../../pages/mainpage";
+import MainPage from "../../pages/Mainpage";
 
 
 const Routes = () => {

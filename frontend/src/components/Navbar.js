@@ -2,15 +2,17 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { logout } from '../actions/action.auth';
-
 import Button from '@material-ui/core/Button';
+
 const Navbar = ({ isAuthenticated, logout }) => {
   const authorizedLinks = (
     <>
-
-        <Link to="/" onClick={logout}>
+ 
+    <Button style={{float: "right",
+    position: "relative",}}>
+     <Link to="/" onClick={logout}>
           Logout
-        </Link>
+        </Link></Button>
 
     </>
   );
