@@ -7,6 +7,8 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import AddInquriry from '../components/Addinquiry';
+import HelpCenter from '../components/HelpCenter';
+import MyInquiry from '../components/MyInquiry';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -72,10 +74,10 @@ export default function Mainpage() {
         <AddInquriry/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+       <HelpCenter/>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <MyInquiry />
       </TabPanel>
     </div>
   );
