@@ -7,6 +7,7 @@ import Signup from "../../pages/Signup";
 import Users from "../../pages/Users";
 import Activated from "../../pages/Activated";
 import MainPage from "../../pages/Mainpage";
+import InquiryEdit from "../../components/InquiryEdit";
 
 
 const Routes = () => {
@@ -18,6 +19,7 @@ const Routes = () => {
         <Route exact path="/users" component={Users} />
         <Route exact path="/activated" component={Activated} />
         <Route exact path="/MainPage" component={MainPage} />
+        <Route exact path="/InquiryEdit/:id" component={InquiryEdit} />
         <PrivateRoute exact path="/MainPage" component={MainPage} />
       </Switch>
     </div>

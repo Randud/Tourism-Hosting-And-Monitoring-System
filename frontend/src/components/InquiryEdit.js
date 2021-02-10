@@ -85,14 +85,14 @@ export default class InquiryEdit extends Component {
         note: this.state.note,
     };
     axios
-      .post(
+      .put(
         'http://localhost:4000/tourist/update/' +
           this.props.match.params.id,
         obj
       )
       .then((res) => console.log(res.data));
 
-    this.props.history.push('/index');
+    this.props.history.push('/MainPage');
   }
 
   render() {
