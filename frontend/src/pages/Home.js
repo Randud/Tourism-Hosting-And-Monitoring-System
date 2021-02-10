@@ -20,6 +20,8 @@ const Home = ({ isAuthenticated }) => {
       <p>I am happy that you are here !!</p>
       <br />
       <br />
+
+
       <hr />
       <div>
         <span>Account Status:</span>

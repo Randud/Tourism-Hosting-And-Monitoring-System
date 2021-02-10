@@ -1,14 +1,15 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-//Private Route
+
 import PrivateRoute from "./PrivateRoutes";
 import Sample from "../../pages/Sample";
 import Login from "../../pages/Login";
 import Signup from "../../pages/Signup";
 import Users from "../../pages/Users";
 import Activated from "../../pages/Activated";
+import MainPage from "../../pages/mainpage";
 
-//All the routes file
+
 const Routes = () => {
   return (
     <div>
@@ -17,7 +18,8 @@ const Routes = () => {
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/users" component={Users} />
         <Route exact path="/activated" component={Activated} />
-        <PrivateRoute exact path="/sample" component={Sample} />
+        <Route exact path="/MainPage" component={MainPage} />
+        <PrivateRoute exact path="/Sample" component={Sample} />
       </Switch>
     </div>
   );
