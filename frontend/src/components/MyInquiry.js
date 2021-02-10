@@ -30,7 +30,7 @@ export default class MyInquiry extends Component {
     return (
       <div>
         <h3 align="center">My Inquiry List</h3>
-        <table className="table table-striped" style={{ marginTop: 20 }}>
+        <table className="table table-striped" style={{ marginTop: 20 }} data-testid = "table">
           <thead>
             <tr>
               <th>Name</th>
