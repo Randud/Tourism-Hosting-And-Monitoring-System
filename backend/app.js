@@ -10,10 +10,7 @@ const helpCenterRoutes = require('./api/routes/helpcenter');
 const auth = require('./api/routes/userauth');
 
 //DB connections
-mongoose.connect('mongodb+srv://dbUser:dbUser123@afcluster.xlexh.mongodb.net/touristDB?retryWrites=true&w=majority',
-    { useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true }
-).then(() => console.log("Mongo database is connected !"))
-    .catch(err => console.log(err));
+
 
 
 app.use(morgan('dev'));
